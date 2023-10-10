@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci Series</title>
+    <script>
+        function fib()
+        {
+            var n = parseInt(document.getElementById("a").value);
+            var result = "";
+            
+            for (var i = 0; i < n; i++) {
+                result += calculateFibonacci(i) + " ";
+            }
+            document.getElementById("output").textContent = result;
+        }
+        
+        function calculateFibonacci(n) {
+            if (n < 2) {
+                return n;
+            } else {
+                return calculateFibonacci(n - 1) + calculateFibonacci(n - 2);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Fibonacci Series</h1>
+    Enter n value: <input type="text" id="a"><br>
+    <button type="button" onclick="fib()">Generate</button><br>
+    <div id="output"></div>
+</body>
+</html>

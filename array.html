@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Printing array elements</title>
+</head>
+<body>
+    <center>
+        <h1> Printing Array elements</h1>
+    <button type="button" onclick="array()">Display Array</button>
+    <p id="result"></p>
+    </center>
+    
+    <script>
+        function array() {
+            var numbers = [2,4,6,8,10];
+            var display = "Array elements: ";
+            for (var i = 0; i < numbers.length; i++) {
+                display += numbers[i];
+                if (i < numbers.length - 1) {
+                    display += ", ";
+                }
+            }
+            document.getElementById('result').textContent = display;
+        }
+    </script>
+</body>
+</html>

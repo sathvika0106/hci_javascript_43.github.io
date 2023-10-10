@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positive and negative numbers</title>
+</head>
+<script>
+    function fun()
+    {
+        var x;
+        x=parseInt(document.getElementById("a").value);
+        if(x>=0)
+        {
+            document.querySelector("h2").innerHTML=("Positve number");
+        }
+        else{
+            document.querySelector("h2").innerHTML=("Negative number");
+        }
+    }
+</script>
+<body>
+    <h1>Finding Positive Or Negative</h1>
+    Enter any Number:<input type="text" id="a"><br>
+    <button type="button" onclick="fun()">Check</button><br>
+    <h2>Number is:</h2>
+</body>
+</html>

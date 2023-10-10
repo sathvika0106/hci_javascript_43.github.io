@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greatest of 3</title>
+    <script>
+        function fun()
+        {
+            var x,y,z;
+            x=parseInt(document.getElementById("a").value);
+            y=parseInt(document.getElementById("b").value);
+            z=parseInt(document.getElementById("c").value);
+            if(x>y && x>z)
+            {
+                alert(x+" is greater");
+            }
+            else if(y>x && y>z){
+                alert(y+" is greater");
+            }
+            else{
+                alert(z+" is greater");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Finding gretaest of 3?</h1>
+    Enter first number:<input type="text" id="a"><br>
+    Enter second number:<input type="text" id="b"><br>
+    Enter third number:<input type="text" id="c"><br>
+    <button type="button" onclick="fun()">Find</button>
+</body>
+</html>
